@@ -1,6 +1,7 @@
-# random-food
+# Random-food
+Firebase + Vue.js + PWA
 
-> random food
+> This is a project for everyone that has a problem about, What would you like to eat?
 
 ## Build Setup
 
