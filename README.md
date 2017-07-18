@@ -1,7 +1,7 @@
-# Random-food
+# [Random-food](https://randomgamer-food.firebaseapp.com/#/)
 Firebase + Vue.js + PWA
 
-> This is a project for everyone that has a problem about, What would you like to eat?
+> "This is a project for everyone that has a problem about, What would you like to eat?"
 
 ## Build Setup
 
