@@ -1,12 +1,16 @@
 <template>
-  <div>
-    <h1>{{ msg }}</h1>
-    <div class="menu">
-      <span>
-        <font size="50" v-bind:class="{ highlightMenu: isHighlightMenu}">{{ luckyMenu }}</font>
-      </span>
+  <div class="col-md-12">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <h1>{{ msg }}</h1>
+      <div class="menu">
+        <span>
+          <font size="50" v-bind:class="{ highlightMenu: isHighlightMenu}">{{ luckyMenu }}</font>
+        </span>
+      </div>
+      <button v-on:click="run" class="btn-random">Push !!!</button>  
     </div>
-    <button v-on:click="run" class="btn-random">Push !!!</button>
+  </div>
   </div>
 </template>
 
@@ -59,7 +63,7 @@
       -webkit-box-shadow: 0px 0px 25px 5px rgb(255, 0, 0);
       -moz-box-shadow: 0px 0px 25px 5px rgb(255, 0, 0);
       box-shadow: 0px 0px 25px 5px rgb(255, 0, 0);
-      background: red;
+      background: #ff8c8c;
     }
 
     h1 {

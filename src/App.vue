@@ -1,13 +1,13 @@
 <template>
     <div id="app">
       <header>
-        <span>Randomgamer Food</span>
+        <span class="col-md-12">Randomgamer Food</span>
       </header>
       <main>
         <router-view></router-view>
       </main>
       <footer>
-        <span>All right reserved &copy by randomgamer</span>
+        <span class="col-md-12">All right reserved &copy by randomgamer</span>
       </footer>
     </div>
 </template>
@@ -28,8 +28,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  width: 80%;
-  margin-left: 10%;
   background-color: aliceblue;
   -webkit-box-shadow: 0px 0px 112px 8px rgba(0,0,0,1);
   -moz-box-shadow: 0px 0px 112px 8px rgba(0,0,0,1);
@@ -39,10 +37,21 @@ body {
 
 main {
   text-align: center;
-  margin-top: 40px;
+  position:absolute;
+  top:56px;
+  bottom:40px;
+  left:0px;
+  right:0px;
+  overflow:auto;
+  padding: 10px 0px 10px 0px;
 }
 
-header, footer {
+header {
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  overflow:hidden;
   margin: 0;
   height: 56px;
   padding: 0 16px 0 24px;
@@ -51,8 +60,17 @@ header, footer {
 }
 
 footer {
-  margin-top: 40px;
+  position:absolute; 
+  bottom:0px; 
+  left:0px; 
+  right:0px;
+  height: 40px !important; 
+  overflow:hidden;
   text-align: center;
+  background: white;
+  border-top: 1px;
+  border-top-style: solid;
+  border-color: black;
 }
 
 header span {
@@ -60,7 +78,7 @@ header span {
   position: relative;
   font-size: 20px;
   line-height: 1;
-  letter-spacing: 1em;
+  letter-spacing: 0.5em;
   font-weight: 400;
   box-sizing: border-box;
   padding-top: 16px;
@@ -70,10 +88,11 @@ footer span {
   display: block;
   position: relative;
   line-height: 1;
-  letter-spacing: 1em;
+  letter-spacing: 0.2em;
   font-weight: 400;
   box-sizing: border-box;
-  padding-top: 16px;
+  padding-top: 10px;
   align-content: center;
+  color: black;
 }
 </style>
