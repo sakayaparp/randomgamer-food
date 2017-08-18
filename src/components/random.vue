@@ -2,13 +2,14 @@
   <div class="col-md-12">
   <div class="panel panel-default">
     <div class="panel-body">
-      <h1>{{ msg }}</h1>
+        <h1>{{ msg }}</h1>
+        <button v-on:click="run" class="btn-add-menu">+</button>
       <div class="menu">
         <span>
           <font size="50" v-bind:class="{ highlightMenu: isHighlightMenu}">{{ luckyMenu }}</font>
         </span>
       </div>
-      <button v-on:click="run" class="btn-random">Push !!!</button>  
+      <button v-on:click="run" class="btn-random">Push !!!</button>
     </div>
   </div>
   </div>
@@ -64,6 +65,12 @@
       -moz-box-shadow: 0px 0px 25px 5px rgb(255, 0, 0);
       box-shadow: 0px 0px 25px 5px rgb(255, 0, 0);
       background: #ff8c8c;
+    }
+
+    .btn-add-menu {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
     }
 
     h1 {
